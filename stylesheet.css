@@ -1,0 +1,389 @@
+/* CSS Sheet for Enactus IIT KGP   */
+/* Author: Shivam , Date: 2/3/16 */
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:700);
+
+body {
+	    font-family: 'Montserrat', sans-serif;
+	    font-size: 16px; 
+	    font-weight: 300; 
+	    color: #555; 
+	    margin: 0; padding: 0;
+	    background-color: #E0E0E0;
+}
+#page {
+	max-width: 1200px;
+	margin: 0 auto;
+	position: relative;
+}
+
+h1 {
+	margin: 0 0 1em 0;
+	font-size: 3em;
+	font-weight: 700;
+}
+h2 {
+	margin: 0 0 0.5em 0;
+	font-size: 1.6em;
+	font-weight: 700;
+}
+h3 {
+	margin: 0 0 0.5em 0;
+	font-size: 1.3em;
+	font-weight: 700;
+}
+h4 {
+	margin: 0 0 1.5em 0;
+	font-size: 1em;
+	font-weight: 700;
+}
+p {
+	margin: 0 0 1em 0;
+
+}
+a {
+	color: #007eff;
+}
+a:visited {
+	color: #65b1ff;
+}
+
+a.btn {
+	font-family: 'Roboto Slab', serif;
+	font-size: 1.2em; 
+	text-decoration: none; color: #001933; 
+	border: 2px solid #001933;
+	border-radius: 8%;
+	padding: 4px 15px;
+	background-color: #CDCDCD;
+	transition: background-color 1.0s;
+
+}
+
+a.btn:hover {
+	background-color: rgba(0,0,0,0.2);
+	color: white;
+
+}
+
+                                             /*  Workong with head  */
+
+header {
+	width: 1200px;
+	height: 600px;
+	background: url(images/code.png) no-repeat center bottom ;	
+	background-size: 1200px 900px;
+	background-position: center;
+	
+	position: relative;
+	
+}
+
+
+header a.logo {
+	z-index: 1;
+	position: absolute;
+	display: block; 	
+	background-size: contain;
+	top: 15px; left: 20px;	
+	color: #CCC;
+}
+header .logo:hover {
+  text-decoration: none;
+}
+header div.hero {
+	 position: absolute;
+	 width: 50%; top: 130px; left: 50%;
+}
+
+header div.hero a {
+     
+     position: relative;
+     
+}
+
+header div.hero h1 {
+	line-height: 1.6em;
+	border: 1px solid rgba(0,0,0,0.3);
+	background-color: rgba(0,0,0,0.5);
+	margin: 0 0 30px 0;
+	color: #E0E0E0;
+	text-shadow: 2px 2px black;
+}
+
+                                                         /* Section Main */
+
+section {
+	padding: 0 60px;
+}
+
+section::after {
+	content:'';
+	display: block;
+	clear: both;
+}
+
+section.main {
+	margin-top: 20px;
+	margin-bottom: 30px;
+	padding: 0;
+	background-color: #CCCCCC;		
+}
+
+section.main aside {
+	width: 50%;
+	float: left;
+	text-align: center;	
+	margin-bottom: 10px;
+
+}
+section.main .content_trending {
+	padding-top: 20px;
+	;
+}
+
+section.main .content_trending p {
+	
+	width: 80%;
+	padding: 20px 20px 20px 50px;
+	line-height: 30px;
+}
+
+section.main .content_tools {
+	padding-top: 5px;
+}
+
+section.main .content_tools p{
+	width: 80%;
+	padding: 20px 20px 20px 50px;
+	line-height: 30px;
+}
+
+section.main aside h3 a {
+	color:#000;
+	text-decoration: none;
+	margin-top: 1000px;
+}
+
+section.main aside h3 a:hover {
+	
+	background-color: #606060;
+	border: 1px solid #E0E0E0;
+	color: white;
+	padding: 5px;
+}
+
+
+                                                             /* Section join */
+section.join {
+	background-color: #FF9999;
+	padding-top: 30px;
+	padding-bottom: 0px;
+	color: white;
+	box-shadow: 5px 10px 10px rgba(0,0,0,0.5);
+}
+section.join aside {
+	width: 50%;
+	float: left;
+	text-align: center;	
+	margin-bottom: 15px;
+}
+section.join .why_you h2 {
+	padding-top: 25px;
+
+}
+section.join .why_you p {
+	color: #001933;
+	padding-bottom: 45px;
+	padding-top: 15px;
+}
+section.join .why_you a{
+	
+	margin: 0 20px 20px 0;
+
+}
+/*section.join .why_you {
+	
+	padding: 0 220px 0 515px;	
+	
+    min-height: 220px;
+}
+
+section.join 
+*/
+section.join .video_prop {
+       /*border: 1px solid #E0E0E0; */
+}
+
+                                                       /* Navigation */
+nav {
+	background-color: rgba(0,0,0,0.65);
+	position: fixed;
+	top: 0px; left: 0px;
+	padding: 50px 0 0 0;
+	width: 100%;
+
+}
+
+nav::after { content:''; 
+     display: block; 
+     clear: both; 
+ }
+
+nav ul {
+	list-style: none;
+	margin: 0px;          
+	padding: 0px;
+	
+}
+
+nav ul li:hover {
+	background-color: #2B0306;
+}
+
+nav ul li:hover > ul {
+	display: block;
+}
+
+nav ul li a {
+	display: inline-block;
+	color: #FFF;
+	padding: 10px 20px;
+	text-decoration: none;
+	width: 125px;
+	position: relative;
+	
+}
+nav ul li a:visited {
+	color: #FFF;
+}
+
+nav ul li a:hover {
+	background-color: #6D0911;
+
+}  
+
+nav ul ul {
+	position: absolute;
+	top: 100%;
+	background-color: #2B0306;
+	display: none;
+
+}
+
+nav ul ul li {
+	position: relative;
+}
+
+nav ul ul ul {
+	left: 100%; 
+	top: 0px;
+
+}
+
+                                                          /* Top level */
+nav > ul {
+	padding-left: 200px;
+}
+
+nav > ul > li {
+	float: left;
+}
+
+nav > ul > li > a {
+	width: auto;
+	padding: 10px 20px 15px 20px;
+}
+
+                                                      /* Meet our Team */
+section.meet {
+	background-color: #E9981E;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	color: white;
+    margin-top: 30px;
+}
+
+section::after {
+	content:'';
+	display: block;
+	clear: both;
+}
+section.meet aside {
+	padding: 20px;
+	
+}
+section.meet div.intro_text h2 {
+	position: relative;
+	left: 430px;
+	
+}
+section.meet div.intro_text p {
+	position: relative;
+	left: 225px;
+	
+}
+section.meet aside {
+	width: 29%;
+	float: left;
+	text-align: center;	
+	margin-bottom: 10px;
+}
+section.meet img {
+	border: 2px solid white;
+	border-radius: 100%;
+}
+section.meet a {
+	text-decoration: none;
+	color: #202020;
+}
+
+section.meet h4 a:hover {
+	background-color: #CC6600;
+	color: white;
+	border: 1px solid #FF9933 ;
+	border-radius: 5px;
+	padding: 5px;
+}
+
+section.meet a img {
+	opacity: 0.2;
+}
+section.meet a img:hover {
+	opacity: 1;
+}
+
+                          /*-------------calss add----------------*/
+.add {
+	width: 100%;
+	height: 25px;
+	background-color: #606060;
+	margin: 10px 0 0px 0;
+}
+
+
+
+                              /*------------Footer---------*/
+
+footer form {
+   
+}
+	
+.one {
+	color: #CDCDCD;
+	width: 100%;
+}
+.two {
+	color: #CDCDCD;
+}
+.three {
+	color: white;
+input {
+	width: 100%;
+}
+input[type=text] {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+}
